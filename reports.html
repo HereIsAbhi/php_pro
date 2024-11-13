@@ -1,72 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Reports - Healthcare Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical Reports - AI Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <link href="reports.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="wrapper">
-        <!-- Include the same sidebar -->
-        <nav id="sidebar" class="active">
-            <!-- Sidebar content -->
+      <nav id="sidebar" class="active">
+        <div class="sidebar-header">
+          <h3>AI Dashboard</h3>
+        </div>
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a href="index.html"
+              ><i class="bi bi-chat-dots-fill me-2"></i>Chat</a
+            >
+          </li>
+          <li>
+            <a href="index.html#features"
+              ><i class="bi bi-grid-fill me-2"></i>Features</a
+            >
+          </li>
+          <li>
+            <a href="profile.html"
+              ><i class="bi bi-person-fill me-2"></i>Profile</a
+            >
+          </li>
+          <li>
+            <a href="settings.html"
+              ><i class="bi bi-gear-fill me-2"></i>Settings</a
+            >
+          </li>
+          <li>
+            <a href="appointments.html"
+              ><i class="bi bi-calendar-check me-2"></i>Appointments</a
+            >
+          </li>
+          <li>
+            <a href="reports.html"
+              ><i class="bi bi-file-medical me-2"></i>Reports</a
+            >
+          </li>
+          <li>
+            <a href="goals.html"
+              ><i class="bi bi-trophy me-2"></i>Health Goals</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+              <i class="bi bi-list"></i>
+            </button>
+            <div class="ms-2">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search reports..."
+              />
+            </div>
+            <div class="ms-auto d-flex align-items-center gap-2">
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#uploadReportModal"
+              >
+                <i class="bi bi-upload me-2"></i>Upload Report
+              </button>
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="bi bi-person-circle fs-5"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="profile.html">Profile</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </nav>
 
-        <div id="content">
-            <div class="container py-4">
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h2>Medical Reports</h2>
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadReportModal">
-                        <i class="bi bi-upload"></i> Upload Report
-                    </button>
-                </div>
-
-                <div class="row">
-                    <!-- Reports Grid -->
-                    <div class="col-md-8">
-                        <div class="row">
-                            <!-- Report Cards -->
-                        </div>
+        <div class="reports-container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-4"
+                  >
+                    <h4 class="card-title mb-0">
+                      Medical Reports & Prescriptions
+                    </h4>
+                    <div class="btn-group">
+                      <button class="btn btn-outline-primary active">
+                        All
+                      </button>
+                      <button class="btn btn-outline-primary">Reports</button>
+                      <button class="btn btn-outline-primary">
+                        Prescriptions
+                      </button>
                     </div>
-
-                    <!-- Prescriptions Section -->
-                    <div class="col-md-4">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="mb-0">Current Prescriptions</h5>
-                            </div>
-                            <div class="card-body">
-                                <!-- Prescription list -->
-                            </div>
-                        </div>
+                  </div>
+                  <div class="reports-list">
+                    <div class="report-item">
+                      <div class="report-icon">
+                        <i class="bi bi-file-earmark-medical"></i>
+                      </div>
+                      <div class="report-details">
+                        <h5>Blood Test Report</h5>
+                        <p>Dr. Sarah Johnson</p>
+                        <small>December 15, 2023</small>
+                      </div>
+                      <div class="report-actions">
+                        <button class="btn btn-sm btn-primary">
+                          <i class="bi bi-download"></i> Download
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary">
+                          <i class="bi bi-eye"></i> View
+                        </button>
+                      </div>
                     </div>
+                    <div class="report-item">
+                      <div class="report-icon prescription">
+                        <i class="bi bi-file-text"></i>
+                      </div>
+                      <div class="report-details">
+                        <h5>Prescription</h5>
+                        <p>Dr. Michael Chen</p>
+                        <small>December 10, 2023</small>
+                      </div>
+                      <div class="report-actions">
+                        <button class="btn btn-sm btn-primary">
+                          <i class="bi bi-download"></i> Download
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary">
+                          <i class="bi bi-eye"></i> View
+                        </button>
+                      </div>
+                    </div>
+                    <div class="report-item">
+                      <div class="report-icon">
+                        <i class="bi bi-file-earmark-medical"></i>
+                      </div>
+                      <div class="report-details">
+                        <h5>X-Ray Report</h5>
+                        <p>Dr. Emily Brown</p>
+                        <small>December 5, 2023</small>
+                      </div>
+                      <div class="report-actions">
+                        <button class="btn btn-sm btn-primary">
+                          <i class="bi bi-download"></i> Download
+                        </button>
+                        <button class="btn btn-sm btn-outline-primary">
+                          <i class="bi bi-eye"></i> View
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
 
-    <!-- Upload Report Modal -->
-    <div class="modal fade" id="uploadReportModal" tabindex="-1">
-        <div class="modal-dialog">
+        <!-- Upload Report Modal -->
+        <div class="modal fade" id="uploadReportModal" tabindex="-1">
+          <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Upload Medical Report</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="upload-area">
-                        <i class="bi bi-cloud-upload display-4"></i>
-                        <p>Drag and drop files here or click to browse</p>
-                    </div>
-                </div>
+              <div class="modal-header">
+                <h5 class="modal-title">Upload Medical Report</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form id="uploadReportForm">
+                  <div class="mb-3">
+                    <label class="form-label">Report Type</label>
+                    <select class="form-select">
+                      <option>Medical Report</option>
+                      <option>Prescription</option>
+                      <option>Lab Test</option>
+                      <option>X-Ray/Scan</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Doctor/Healthcare Provider</label>
+                    <input type="text" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Date</label>
+                    <input type="date" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Upload File</label>
+                    <input type="file" class="form-control" />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Notes (Optional)</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel
+                </button>
+                <button type="button" class="btn btn-primary">
+                  Upload Report
+                </button>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="reports.js"></script>
-</body>
+  </body>
 </html>

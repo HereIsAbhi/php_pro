@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Healthcare Dashboard</title>
+    <title>AI Dashboard</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,44 +13,52 @@
       rel="stylesheet"
     />
     <link href="styles.css" rel="stylesheet" />
-    <style>
-        
-    </style>
   </head>
   <body>
     <div class="wrapper">
-      <!-- Sidebar -->
       <nav id="sidebar" class="active">
         <div class="sidebar-header">
-          <h3>Healthcare Dashboard</h3>
+          <h3>AI Dashboard</h3>
         </div>
         <ul class="list-unstyled components">
+          <li class="active">
+            <a href="index.html"
+              ><i class="bi bi-chat-dots-fill me-2"></i>Chat</a
+            >
+          </li>
           <li>
-            <a href="index.html"><i class="bi bi-chat-dots-fill"></i> Chat</a>
+            <a href="index.html#features"
+              ><i class="bi bi-grid-fill me-2"></i>Features</a
+            >
+          </li>
+          <li>
+            <a href="profile.html"
+              ><i class="bi bi-person-fill me-2"></i>Profile</a
+            >
+          </li>
+          <li>
+            <a href="settings.html"
+              ><i class="bi bi-gear-fill me-2"></i>Settings</a
+            >
           </li>
           <li>
             <a href="appointments.html"
-              ><i class="bi bi-calendar-check"></i> Appointments</a
+              ><i class="bi bi-calendar-check me-2"></i>Appointments</a
             >
           </li>
           <li>
             <a href="reports.html"
-              ><i class="bi bi-file-medical"></i> Medical Reports</a
+              ><i class="bi bi-file-medical me-2"></i>Reports</a
             >
           </li>
           <li>
-            <a href="goals.html"><i class="bi bi-trophy"></i> Health Goals</a>
-          </li>
-          <li>
-            <a href="profile.html"><i class="bi bi-person-fill"></i> Profile</a>
-          </li>
-          <li>
-            <a href="settings.html"><i class="bi bi-gear-fill"></i> Settings</a>
+            <a href="goals.html"
+              ><i class="bi bi-trophy me-2"></i>Health Goals</a
+            >
           </li>
         </ul>
       </nav>
 
-      <!-- Page Content -->
       <div id="content">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
@@ -67,7 +75,6 @@
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
                 >
                   <i class="bi bi-person-circle fs-5"></i>
                 </a>
@@ -86,7 +93,6 @@
           </div>
         </nav>
 
-        <!-- Chat Interface -->
         <div class="chat-container">
           <div class="chat-messages" id="chatMessages">
             <div class="message ai-message">
@@ -109,7 +115,6 @@
           <div class="chat-input-container">
             <div class="input-group">
               <textarea
-                id="chatInput"
                 class="form-control"
                 placeholder="Type your message here..."
                 rows="1"
@@ -121,16 +126,13 @@
           </div>
         </div>
 
-        <!-- Features Section -->
         <section id="features" class="features-section">
           <div class="container">
             <div class="section-title text-center mb-5">
               <h2>Our Features</h2>
-              <p>
-                Experience the power of AI-driven conversations and intelligent
-                assistance
-              </p>
+              <p>Experience the power of AI-driven healthcare assistance</p>
             </div>
+
             <div class="row justify-content-center">
               <div class="col-md-8">
                 <ul class="nav nav-tabs nav-fill mb-4" role="tablist">
@@ -139,9 +141,6 @@
                       class="nav-link active"
                       data-bs-toggle="tab"
                       href="#chat-assistant"
-                      role="tab"
-                      aria-controls="chat-assistant"
-                      aria-selected="true"
                     >
                       <i class="bi bi-chat-dots me-2"></i>Smart Chat Assistant
                     </a>
@@ -151,9 +150,6 @@
                       class="nav-link"
                       data-bs-toggle="tab"
                       href="#intelligent-responses"
-                      role="tab"
-                      aria-controls="intelligent-responses"
-                      aria-selected="false"
                     >
                       <i class="bi bi-brain me-2"></i>Intelligent Responses
                     </a>
@@ -163,20 +159,14 @@
                       class="nav-link"
                       data-bs-toggle="tab"
                       href="#data-analysis"
-                      role="tab"
-                      aria-controls="data-analysis"
-                      aria-selected="false"
                     >
                       <i class="bi bi-graph-up me-2"></i>Data Analysis
                     </a>
                   </li>
                 </ul>
+
                 <div class="tab-content">
-                  <div
-                    class="tab-pane fade show active"
-                    id="chat-assistant"
-                    role="tabpanel"
-                  >
+                  <div class="tab-pane fade show active" id="chat-assistant">
                     <div class="feature-content">
                       <h3>Smart Chat Assistant</h3>
                       <p class="text-muted">
@@ -199,11 +189,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div
-                    class="tab-pane fade"
-                    id="intelligent-responses"
-                    role="tabpanel"
-                  >
+                  <div class="tab-pane fade" id="intelligent-responses">
                     <div class="feature-content">
                       <h3>Intelligent Responses</h3>
                       <p class="text-muted">
@@ -226,7 +212,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="data-analysis" role="tabpanel">
+                  <div class="tab-pane fade" id="data-analysis">
                     <div class="feature-content">
                       <h3>Data Analysis</h3>
                       <p class="text-muted">
