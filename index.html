@@ -1,248 +1,1567 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Dashboard</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-    <link href="styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <nav id="sidebar" class="active">
-        <div class="sidebar-header">
-          <h3>AI Dashboard</h3>
-        </div>
-        <ul class="list-unstyled components">
-          <li class="active">
-            <a href="index.html"
-              ><i class="bi bi-chat-dots-fill me-2"></i>Chat</a
-            >
-          </li>
-          <li>
-            <a href="index.html#features"
-              ><i class="bi bi-grid-fill me-2"></i>Features</a
-            >
-          </li>
-          <li>
-            <a href="profile.html"
-              ><i class="bi bi-person-fill me-2"></i>Profile</a
-            >
-          </li>
-          <li>
-            <a href="settings.html"
-              ><i class="bi bi-gear-fill me-2"></i>Settings</a
-            >
-          </li>
-          <li>
-            <a href="appointments.html"
-              ><i class="bi bi-calendar-check me-2"></i>Appointments</a
-            >
-          </li>
-          <li>
-            <a href="reports.html"
-              ><i class="bi bi-file-medical me-2"></i>Reports</a
-            >
-          </li>
-          <li>
-            <a href="goals.html"
-              ><i class="bi bi-trophy me-2"></i>Health Goals</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Index - iLanding Bootstrap Template</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-      <div id="content">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn btn-primary">
-              <i class="bi bi-list"></i>
-            </button>
-            <div class="ms-2">
-              <input type="text" class="form-control" placeholder="Search..." />
-            </div>
-            <div class="ms-auto d-flex align-items-center">
-              <div class="dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  <i class="bi bi-person-circle fs-5"></i>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <a class="dropdown-item" href="profile.html">Profile</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="settings.html">Settings</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: iLanding
+  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
+  * Updated: Oct 28 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-xl-0"
+        >
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1 class="sitename">HealthTech</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <!-- <li class="dropdown">
+              <a href="#"
+                ><span>Dropdown</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Deep Dropdown</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li> -->
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
 
-        <div class="chat-container">
-          <div class="chat-messages" id="chatMessages">
-            <div class="message ai-message">
-              <div class="message-content">
-                <i class="bi bi-robot"></i>
-                <div class="message-text">
-                  Hello! How can I assist you today?
+        <a class="btn-getstarted" href="login_signup.html">Get Started</a>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="company-badge mb-4">
+                  <i class="bi bi-heart-pulse me-2"></i>
+                  Empowering Your Health Journey
+                </div>
+
+                <h1 class="mb-4">
+                  Your AI-Powered <br />
+                  Healthcare Companion <br />
+                  <span class="accent-text">Personalized Care</span>
+                </h1>
+
+                <p class="mb-4 mb-md-5">
+                  Access reliable health information, connect with AI health
+                  advisors, and monitor your wellness goals in one place. Your
+                  well-being is our priority.
+                </p>
+
+                <div class="hero-buttons">
+                  <a
+                    href="login_signup.html"
+                    class="btn btn-primary me-0 me-sm-2 mx-1"
+                    >Get Started</a
+                  >
+                  <a
+                    href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+                    class="btn btn-link mt-2 mt-sm-0 glightbox"
+                  >
+                    <i class="bi bi-play-circle me-1"></i>
+                    Watch Demo
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="message user-message">
-              <div class="message-content">
-                <i class="bi bi-person"></i>
-                <div class="message-text">
-                  Hi! Can you help me with some information?
+
+            <div class="col-lg-6">
+              <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+                <img
+                  src="assets/img/illustration-1.webp"
+                  alt="Hero Image"
+                  class="img-fluid"
+                />
+
+                <div class="customers-badge">
+                  <div class="customer-avatars">
+                    <img
+                      src="assets/img/avatar-1.webp"
+                      alt="User 1"
+                      class="avatar"
+                    />
+                    <img
+                      src="assets/img/avatar-2.webp"
+                      alt="User 2"
+                      class="avatar"
+                    />
+                    <img
+                      src="assets/img/avatar-3.webp"
+                      alt="User 3"
+                      class="avatar"
+                    />
+                    <img
+                      src="assets/img/avatar-4.webp"
+                      alt="User 4"
+                      class="avatar"
+                    />
+                    <img
+                      src="assets/img/avatar-5.webp"
+                      alt="User 5"
+                      class="avatar"
+                    />
+                    <span class="avatar more">12+</span>
+                  </div>
+                  <p class="mb-0 mt-2">
+                    Join 20,000+ users improving their health journey with
+                    AI-powered insights
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="chat-input-container">
-            <div class="input-group">
-              <textarea
-                class="form-control"
-                placeholder="Type your message here..."
-                rows="1"
-              ></textarea>
-              <button class="btn btn-primary">
-                <i class="bi bi-send"></i>
-              </button>
+
+          <div
+            class="row stats-row gy-4 mt-5"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="bi bi-trophy"></i>
+                </div>
+                <div class="stat-content">
+                  <h4>5x Innovation Awards</h4>
+                  <p class="mb-0">Recognized in Digital Health</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="bi bi-heart"></i>
+                </div>
+                <div class="stat-content">
+                  <h4>50k+ Users</h4>
+                  <p class="mb-0">Empowered Health Journeys</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="bi bi-chat-square-text"></i>
+                </div>
+                <div class="stat-content">
+                  <h4>120k Consultations</h4>
+                  <p class="mb-0">AI Health Advisor Chats</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="stat-item">
+                <div class="stat-icon">
+                  <i class="bi bi-award"></i>
+                </div>
+                <div class="stat-content">
+                  <h4>Trusted Care</h4>
+                  <p class="mb-0">Driven by Advanced AI</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- /Hero Section -->
 
-        <section id="features" class="features-section">
-          <div class="container">
-            <div class="section-title text-center mb-5">
-              <h2>Our Features</h2>
-              <p>Experience the power of AI-driven healthcare assistance</p>
-            </div>
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 align-items-center justify-content-between">
+            <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+              <span class="about-meta">MORE ABOUT US</span>
+              <h2 class="about-title">Revolutionizing Healthcare with AI</h2>
+              <p class="about-description">
+                Our mission is to make healthcare accessible, personalized, and
+                proactive with the power of AI. We empower users with the
+                information, insights, and assistance they need to take control
+                of their health journey and make informed decisions.
+              </p>
 
-            <div class="row justify-content-center">
-              <div class="col-md-8">
-                <ul class="nav nav-tabs nav-fill mb-4" role="tablist">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      data-bs-toggle="tab"
-                      href="#chat-assistant"
-                    >
-                      <i class="bi bi-chat-dots me-2"></i>Smart Chat Assistant
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      data-bs-toggle="tab"
-                      href="#intelligent-responses"
-                    >
-                      <i class="bi bi-brain me-2"></i>Intelligent Responses
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      data-bs-toggle="tab"
-                      href="#data-analysis"
-                    >
-                      <i class="bi bi-graph-up me-2"></i>Data Analysis
-                    </a>
-                  </li>
-                </ul>
+              <div class="row feature-list-wrapper">
+                <div class="col-md-6">
+                  <ul class="feature-list">
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> 24/7 AI Health
+                      Assistance
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Personalized
+                      Health Insights
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Data Privacy &
+                      Security
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="feature-list">
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Easy Symptom
+                      Checking
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Health Goals
+                      Tracking
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> AI-Powered
+                      Diagnostics
+                    </li>
+                  </ul>
+                </div>
+              </div>
 
-                <div class="tab-content">
-                  <div class="tab-pane fade show active" id="chat-assistant">
-                    <div class="feature-content">
-                      <h3>Smart Chat Assistant</h3>
-                      <p class="text-muted">
-                        Experience natural conversations with our AI-powered
-                        chat assistant
-                      </p>
-                      <ul class="feature-list">
-                        <li>
-                          <i class="bi bi-check2-circle"></i> Natural language
-                          processing for human-like interactions
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i> 24/7 availability
-                          for instant responses
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i> Context-aware
-                          conversations for better understanding
-                        </li>
-                      </ul>
+              <div class="info-wrapper">
+                <div class="row gy-4">
+                  <div class="col-lg-5">
+                    <div class="profile d-flex align-items-center gap-3">
+                      <img
+                        src="assets/img/avatar-1.webp"
+                        alt="CEO Profile"
+                        class="profile-image"
+                      />
+                      <div>
+                        <h4 class="profile-name">Dr. Sarah Lee</h4>
+                        <p class="profile-position">CEO &amp; Founder</p>
+                      </div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="intelligent-responses">
-                    <div class="feature-content">
-                      <h3>Intelligent Responses</h3>
-                      <p class="text-muted">
-                        Get accurate and contextual responses powered by
-                        advanced AI
-                      </p>
-                      <ul class="feature-list">
-                        <li>
-                          <i class="bi bi-check2-circle"></i> Machine
-                          learning-based response generation
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i> Adaptive learning
-                          from user interactions
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i> Multi-language
-                          support for global accessibility
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="data-analysis">
-                    <div class="feature-content">
-                      <h3>Data Analysis</h3>
-                      <p class="text-muted">
-                        Leverage powerful analytics for deeper insights
-                      </p>
-                      <ul class="feature-list">
-                        <li>
-                          <i class="bi bi-check2-circle"></i> Real-time data
-                          processing and analysis
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i> Customizable
-                          analytics dashboard
-                        </li>
-                        <li>
-                          <i class="bi bi-check2-circle"></i> Trend
-                          identification and reporting
-                        </li>
-                      </ul>
+                  <div class="col-lg-7">
+                    <div class="contact-info d-flex align-items-center gap-2">
+                      <i class="bi bi-telephone-fill"></i>
+                      <div>
+                        <p class="contact-label">Contact Us Anytime</p>
+                        <p class="contact-number">+123 456-789</p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+            <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="image-wrapper">
+                <div
+                  class="images position-relative"
+                  data-aos="zoom-out"
+                  data-aos-delay="400"
+                >
+                  <img
+                    src="assets/img/about-5.webp"
+                    alt="AI Healthcare"
+                    class="img-fluid main-image rounded-4"
+                  />
+                  <img
+                    src="assets/img/about-2.webp"
+                    alt="Our Team"
+                    class="img-fluid small-image rounded-4"
+                  />
+                </div>
+                <div class="experience-badge floating">
+                  <h3>15+ <span>Years</span></h3>
+                  <p>Of experience in healthcare innovation</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Features Section -->
+      <section id="features" class="features section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Our Features</h2>
+          <p>
+            Transforming healthcare with accessible, AI-powered solutions for
+            everyone
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+              <li class="nav-item">
+                <a
+                  class="nav-link active show"
+                  data-bs-toggle="tab"
+                  data-bs-target="#features-tab-1"
+                >
+                  <h4>24/7 Virtual Health Assistant</h4>
+                </a>
+              </li>
+              <!-- End tab nav item -->
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#features-tab-2"
+                >
+                  <h4>Personalized Health Insights</h4>
+                </a>
+              </li>
+              <!-- End tab nav item -->
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  data-bs-toggle="tab"
+                  data-bs-target="#features-tab-3"
+                >
+                  <h4>AI-Powered Diagnostics</h4>
+                </a>
+              </li>
+              <!-- End tab nav item -->
+            </ul>
+          </div>
+
+          <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+            <!-- Virtual Health Assistant Tab -->
+            <div class="tab-pane fade active show" id="features-tab-1">
+              <div class="row">
+                <div
+                  class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                >
+                  <h3>24/7 Virtual Health Assistant</h3>
+                  <p class="fst-italic">
+                    Access real-time health assistance anytime, anywhere. Our AI
+                    assistant is here to answer questions, check symptoms, and
+                    guide you through daily health choices.
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="bi bi-check2-all"></i>
+                      <span>Instant answers to common health questions</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check2-all"></i>
+                      <span>Personalized symptom checking and guidance</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check2-all"></i>
+                      <span
+                        >24/7 support for peace of mind and health
+                        tracking</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                  <img
+                    src="assets/img/features-illustration-3.webp"
+                    alt="Virtual Health Assistant"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- End tab content item -->
+
+            <!-- Personalized Health Insights Tab -->
+            <div class="tab-pane fade" id="features-tab-2">
+              <div class="row">
+                <div
+                  class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                >
+                  <h3>Personalized Health Insights</h3>
+                  <p class="fst-italic">
+                    Gain insights that help you understand and manage your
+                    health better, all based on your health data and goals.
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="bi bi-check2-all"></i>
+                      <span
+                        >AI-driven health recommendations tailored to you</span
+                      >
+                    </li>
+                    <li>
+                      <i class="bi bi-check2-all"></i>
+                      <span>Track and monitor vital health indicators</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check2-all"></i>
+                      <span
+                        >Achieve wellness goals with actionable insights</span
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                  <img
+                    src="assets/img/features-illustration-1.webp"
+                    alt="Personalized Health Insights"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- End tab content item -->
+
+            <!-- AI-Powered Diagnostics Tab -->
+            <div class="tab-pane fade" id="features-tab-3">
+              <div class="row">
+                <div
+                  class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center"
+                >
+                  <h3>AI-Powered Diagnostics</h3>
+                  <ul>
+                    <li>
+                      <i class="bi bi-check2-all"></i>
+                      <span>Advanced diagnostic tools for early detection</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-check2-all"></i>
+                      <span
+                        >Immediate analysis of symptoms for timely action</span
+                      >
+                    </li>
+                    <li>
+                      <i class="bi bi-check2-all"></i>
+                      <span
+                        >High accuracy and reliability powered by machine
+                        learning</span
+                      >
+                    </li>
+                  </ul>
+                  <p class="fst-italic">
+                    Our diagnostic AI supports physicians and patients by
+                    identifying patterns, assessing risk, and making data-driven
+                    health suggestions.
+                  </p>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 text-center">
+                  <img
+                    src="assets/img/features-illustration-2.webp"
+                    alt="AI-Powered Diagnostics"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- End tab content item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Features Section -->
+
+      <!-- Features Cards Section -->
+      <section id="features-cards" class="features-cards section">
+        <div class="container">
+          <div class="row gy-4">
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="feature-box orange">
+                <i class="bi bi-heart-pulse"></i>
+                <h4>Patient-Centered Care</h4>
+                <p>
+                  Tailored support for every patient, enhancing accessibility to
+                  care and ensuring well-being at all times.
+                </p>
+              </div>
+            </div>
+            <!-- End Feature Box-->
+
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="feature-box blue">
+                <i class="bi bi-robot"></i>
+                <h4>AI Diagnostics</h4>
+                <p>
+                  Harnessing AI to provide rapid, reliable diagnostic insights
+                  that help identify potential health risks early on.
+                </p>
+              </div>
+            </div>
+            <!-- End Feature Box-->
+
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="feature-box green">
+                <i class="bi bi-graph-up"></i>
+                <h4>Real-Time Health Monitoring</h4>
+                <p>
+                  Continuous health tracking and monitoring, giving real-time
+                  feedback on key health indicators and trends.
+                </p>
+              </div>
+            </div>
+            <!-- End Feature Box-->
+
+            <div
+              class="col-xl-3 col-md-6"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="feature-box red">
+                <i class="bi bi-shield-check"></i>
+                <h4>Data Privacy & Security</h4>
+                <p>
+                  Protecting your personal health information with robust
+                  security protocols and encrypted data handling.
+                </p>
+              </div>
+            </div>
+            <!-- End Feature Box-->
+          </div>
+        </div>
+      </section>
+
+      <!-- /Features Cards Section -->
+
+      <!-- Call To Action Section -->
+      <!-- Call To Action Section -->
+      <section id="call-to-action" class="call-to-action section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="row justify-content-center align-items-center position-relative"
+          >
+            <div class="col-lg-8 mx-auto text-center">
+              <h2 class="display-4 mb-4">
+                Take Control of Your Health with Our AI Chatbot
+              </h2>
+              <p class="mb-4">
+                Get personalized health advice, track your medical history, and
+                manage your wellness with ease. Our AI-powered chatbot is here
+                to guide you 24/7. Let's make better health choices together!
+              </p>
+              <a href="login_signup.html" class="btn btn-cta"
+                >Start Chatting Now</a
+              >
+            </div>
+
+            <!-- Abstract Background Elements -->
+            <div class="shape shape-1">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M47.1,-57.1C59.9,-45.6,68.5,-28.9,71.4,-10.9C74.2,7.1,71.3,26.3,61.5,41.1C51.7,55.9,35,66.2,16.9,69.2C-1.3,72.2,-21,67.8,-36.9,57.9C-52.8,48,-64.9,32.6,-69.1,15.1C-73.3,-2.4,-69.5,-22,-59.4,-37.1C-49.3,-52.2,-32.8,-62.9,-15.7,-64.9C1.5,-67,34.3,-68.5,47.1,-57.1Z"
+                  transform="translate(100 100)"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="shape shape-2">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M41.3,-49.1C54.4,-39.3,66.6,-27.2,71.1,-12.1C75.6,3,72.4,20.9,63.3,34.4C54.2,47.9,39.2,56.9,23.2,62.3C7.1,67.7,-10,69.4,-24.8,64.1C-39.7,58.8,-52.3,46.5,-60.1,31.5C-67.9,16.4,-70.9,-1.4,-66.3,-16.6C-61.8,-31.8,-49.7,-44.3,-36.3,-54C-22.9,-63.7,-8.2,-70.6,3.6,-75.1C15.4,-79.6,28.2,-58.9,41.3,-49.1Z"
+                  transform="translate(100 100)"
+                ></path>
+              </svg>
+            </div>
+
+            <!-- Dot Pattern Groups -->
+            <div class="dots dots-1">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <pattern
+                  id="dot-pattern"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
+                </pattern>
+                <rect width="100" height="100" fill="url(#dot-pattern)"></rect>
+              </svg>
+            </div>
+
+            <div class="dots dots-2">
+              <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <pattern
+                  id="dot-pattern-2"
+                  x="0"
+                  y="0"
+                  width="20"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
+                </pattern>
+                <rect
+                  width="100"
+                  height="100"
+                  fill="url(#dot-pattern-2)"
+                ></rect>
+              </svg>
+            </div>
+
+            <div class="shape shape-3">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M43.3,-57.1C57.4,-46.5,71.1,-32.6,75.3,-16.2C79.5,0.2,74.2,19.1,65.1,35.3C56,51.5,43.1,65,27.4,71.7C11.7,78.4,-6.8,78.3,-23.9,72.4C-41,66.5,-56.7,54.8,-65.4,39.2C-74.1,23.6,-75.8,4,-71.7,-13.2C-67.6,-30.4,-57.7,-45.2,-44.3,-56.1C-30.9,-67,-15.5,-74,0.7,-74.9C16.8,-75.8,33.7,-70.7,43.3,-57.1Z"
+                  transform="translate(100 100)"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Call To Action Section -->
+
+      <!-- /Call To Action Section -->
+
+      <!-- Clients Section -->
+      <!-- <section id="clients" class="clients section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 40
+                  },
+                  "480": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 60
+                  },
+                  "640": {
+                    "slidesPerView": 4,
+                    "spaceBetween": 80
+                  },
+                  "992": {
+                    "slidesPerView": 6,
+                    "spaceBetween": 120
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-1.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-2.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-3.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-4.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-5.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-6.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-7.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-8.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section> -->
+      <!-- /Clients Section -->
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>What Our Users Say</h2>
+          <p>
+            Hear from our users about how the AI Healthcare Chatbot has helped
+            them manage their health and wellness.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="testimonial-item">
+                <img
+                  src="assets/img/testimonials/testimonials-1.jpg"
+                  class="testimonial-img"
+                  alt="User 1"
+                />
+                <h3>Dr. Emily Stone</h3>
+                <h4>General Physician</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>
+                    "The AI chatbot has been a game-changer for my patients. It
+                    helps them track symptoms, schedule appointments, and get
+                    personalized health advice, all while making it easier for
+                    me to manage their care."
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="testimonial-item">
+                <img
+                  src="assets/img/testimonials/testimonials-2.jpg"
+                  class="testimonial-img"
+                  alt="User 2"
+                />
+                <h3>John Doe</h3>
+                <h4>Health Enthusiast</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>
+                    "I love how easy it is to get health advice from the
+                    chatbot. It keeps track of my progress and reminds me to
+                    take my medications. It’s like having a personal healthcare
+                    assistant 24/7!"
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="testimonial-item">
+                <img
+                  src="assets/img/testimonials/testimonials-3.jpg"
+                  class="testimonial-img"
+                  alt="User 3"
+                />
+                <h3>Jane Smith</h3>
+                <h4>Patient</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>
+                    "The AI healthcare chatbot has been incredibly helpful
+                    during my recovery. It provides me with the support I need
+                    and has made scheduling my check-ups so much easier."
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="testimonial-item">
+                <img
+                  src="assets/img/testimonials/testimonials-4.jpg"
+                  class="testimonial-img"
+                  alt="User 4"
+                />
+                <h3>Mark Taylor</h3>
+                <h4>Fitness Trainer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>
+                    "As a fitness trainer, I love using the AI chatbot to track
+                    my clients' health goals and progress. It provides instant
+                    feedback and ensures that my clients stay on top of their
+                    wellness journey."
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Testimonials Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Our Services</h2>
+          <p>
+            Discover the range of services offered by our AI-powered healthcare
+            chatbot and health management system, designed to improve your
+            wellness and streamline your healthcare journey.
+          </p>
+        </div>
+        <!-- End Section Title -->
+        <!-- Services Section -->
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="service-card d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-chat-dots"></i>
+                </div>
+                <div>
+                  <h3>AI-Powered Health Chatbot</h3>
+                  <p>
+                    Get instant, personalized health advice from our AI-powered
+                    chatbot. It helps with symptom tracking, medication
+                    reminders, and answering health-related queries at any time.
+                  </p>
+                  <a href="service-details.html" class="read-more"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Card -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="service-card d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-calendar-check"></i>
+                </div>
+                <div>
+                  <h3>Appointment Scheduling</h3>
+                  <p>
+                    Easily schedule appointments with healthcare professionals.
+                    Our chatbot integrates with your calendar to remind you of
+                    upcoming visits and optimize your health management.
+                  </p>
+                  <a href="service-details.html" class="read-more"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Card -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-card d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-thermometer"></i>
+                </div>
+                <div>
+                  <h3>Symptom Tracking & Monitoring</h3>
+                  <p>
+                    Track your health symptoms and vital signs with ease. The
+                    chatbot analyzes your inputs and provides insights or alerts
+                    you when you need to take action or see a doctor.
+                  </p>
+                  <a href="service-details.html" class="read-more"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Card -->
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="service-card d-flex">
+                <div class="icon flex-shrink-0">
+                  <i class="bi bi-heart"></i>
+                </div>
+                <div>
+                  <h3>Personalized Health Advice</h3>
+                  <p>
+                    Receive tailored health advice based on your lifestyle,
+                    medical history, and current health status. Our system
+                    learns and adapts to give you better suggestions over time.
+                  </p>
+                  <a href="service-details.html" class="read-more"
+                    >Read More <i class="bi bi-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <!-- End Service Card -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section id="pricing" class="pricing section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Pricing</h2>
+          <p>
+            Choose the perfect plan to manage your health journey with our
+            AI-powered chatbot and health management system.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4 justify-content-center">
+            <!-- Basic Plan -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="pricing-card">
+                <h3>Basic Plan</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">9.9</span>
+                  <span class="period">/ month</span>
+                </div>
+                <p class="description">
+                  Ideal for individual users looking for basic health advice and
+                  symptom tracking.
+                </p>
+
+                <h4>Features Included:</h4>
+                <ul class="features-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    AI-powered symptom checker
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Personalized health tips
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Weekly health reports
+                  </li>
+                </ul>
+
+                <a href="#" class="btn btn-primary">
+                  Buy Now
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="pricing-card popular">
+                <div class="popular-badge">Most Popular</div>
+                <h3>Standard Plan</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">19.9</span>
+                  <span class="period">/ month</span>
+                </div>
+                <p class="description">
+                  Perfect for users looking for advanced health tracking and
+                  personalized consultations.
+                </p>
+
+                <h4>Features Included:</h4>
+                <ul class="features-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    AI-powered symptom checker
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Personalized health tips & advice
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Health appointment scheduling
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Medication reminders
+                  </li>
+                </ul>
+
+                <a href="#" class="btn btn-light">
+                  Buy Now
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="pricing-card">
+                <h3>Premium Plan</h3>
+                <div class="price">
+                  <span class="currency">$</span>
+                  <span class="amount">39.9</span>
+                  <span class="period">/ month</span>
+                </div>
+                <p class="description">
+                  For users who want full access to health analytics and
+                  one-on-one consultations with healthcare professionals.
+                </p>
+
+                <h4>Features Included:</h4>
+                <ul class="features-list">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    AI-powered symptom checker
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Personalized health tips & advice
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Health appointment scheduling
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Medication reminders
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Direct consultation with healthcare professionals
+                  </li>
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i>
+                    Full health analytics and reports
+                  </li>
+                </ul>
+
+                <a href="#" class="btn btn-primary">
+                  Buy Now
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Pricing Section -->
+
+      <!-- FAQ Section for AI Healthcare Bot & Health Management System -->
+      <section class="faq-9 faq section light-background" id="faq">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5" data-aos="fade-up">
+              <h2 class="faq-title">
+                Have a question about our Healthcare System? Check out the FAQ
+              </h2>
+              <p class="faq-description">
+                Our AI-powered healthcare bot and management system is designed
+                to assist with health tracking, AI-based diagnosis, and overall
+                wellness management. Find answers to your most common questions
+                here.
+              </p>
+              <div
+                class="faq-arrow d-none d-lg-block"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <svg
+                  class="faq-arrow"
+                  width="200"
+                  height="211"
+                  viewBox="0 0 200 211"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+
+            <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+              <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item faq-active">
+                  <h3>How does the AI healthcare bot diagnose my symptoms?</h3>
+                  <div class="faq-content">
+                    <p>
+                      The AI bot uses a combination of natural language
+                      processing (NLP) and machine learning algorithms to
+                      analyze your reported symptoms. It cross-references your
+                      input with a vast medical database and suggests possible
+                      conditions. However, it's important to consult a
+                      healthcare professional for a definitive diagnosis.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                  <h3>Can I track my medical history with the system?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Yes, the healthcare management system allows you to store
+                      and track your medical history. You can upload your
+                      prescriptions, lab results, and doctor's notes, and the
+                      system will keep everything in one secure place.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                  <h3>Is the AI healthcare bot secure and private?</h3>
+                  <div class="faq-content">
+                    <p>
+                      Absolutely. We prioritize your privacy and data security.
+                      All information provided to the AI bot is encrypted and
+                      stored in compliance with healthcare privacy regulations,
+                      such as HIPAA.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                  <h3>How can I book an appointment with a doctor?</h3>
+                  <div class="faq-content">
+                    <p>
+                      The system allows you to book appointments directly with
+                      our partnered healthcare providers. You can select your
+                      preferred doctor, time, and date, and the system will send
+                      you a confirmation.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                  <h3>
+                    What should I do if the AI bot suggests a critical
+                    condition?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      If the AI bot suggests a critical condition, we strongly
+                      recommend seeking medical attention immediately. The bot’s
+                      suggestions are based on your inputs and the available
+                      data, but it's essential to get a professional evaluation.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                  <h3>
+                    Can I integrate my wearable health devices with the system?
+                  </h3>
+                  <div class="faq-content">
+                    <p>
+                      Yes, the system supports integration with various health
+                      wearables such as fitness trackers, heart rate monitors,
+                      and glucose meters. This allows for continuous monitoring
+                      and automatic updates to your health profile.
+                    </p>
+                  </div>
+                  <i class="faq-toggle bi bi-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /FAQ Section -->
+
+      <!-- Call To Action 2 Section -->
+      <section
+        id="call-to-action-2"
+        class="call-to-action-2 section dark-background"
+      >
+        <div class="container">
+          <div
+            class="row justify-content-center"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="col-xl-10">
+              <div class="text-center">
+                <h3>Take Control of Your Health with AI Assistance</h3>
+                <p>
+                  Experience the future of healthcare with our AI-powered bot
+                  and health management system. Track your symptoms, manage
+                  appointments, and receive personalized health advice — all in
+                  one place. Get started now and make better health decisions
+                  every day.
+                </p>
+                <a class="cta-btn" href="#">Start Your Health Journey</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Call To Action 2 Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Contact Us</h2>
+          <p>
+            Reach out for assistance, consultations, or more information about
+            our AI-powered healthcare system.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row g-4 g-lg-5">
+            <div class="col-lg-5">
+              <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+                <h3>Contact Info</h3>
+                <p>
+                  For general inquiries, scheduling appointments, or learning
+                  more about our AI healthcare system, feel free to get in touch
+                  with us.
+                </p>
+
+                <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                  <div class="icon-box">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Our Location</h4>
+                    <p>HealthTech Center</p>
+                    <p>123 Wellness Avenue, City, Country</p>
+                  </div>
+                </div>
+
+                <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                  <div class="icon-box">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Phone Number</h4>
+                    <p>+1 800 123 4567</p>
+                    <p>+1 800 234 5678</p>
+                  </div>
+                </div>
+
+                <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                  <div class="icon-box">
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                  <div class="content">
+                    <h4>Email Address</h4>
+                    <p>support@healthtech.com</p>
+                    <p>info@healthtech.com</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+                <h3>Get In Touch</h3>
+                <p>
+                  Have questions or need personalized assistance? Contact us
+                  today, and our team will get back to you as soon as possible.
+                </p>
+
+                <form
+                  action="forms/contact.php"
+                  method="post"
+                  class="php-email-form"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <div class="row gy-4">
+                    <div class="col-md-6">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        placeholder="Your Name"
+                        required=""
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <input
+                        type="email"
+                        class="form-control"
+                        name="email"
+                        placeholder="Your Email"
+                        required=""
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="subject"
+                        placeholder="Subject"
+                        required=""
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        rows="6"
+                        placeholder="Message"
+                        required=""
+                      ></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">
+                        Your message has been sent. Thank you!
+                      </div>
+
+                      <button type="submit" class="btn">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">HealthTech</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>HealthTech Center</p>
+              <p>123 Wellness Avenue, City, Country</p>
+              <p class="mt-3">
+                <strong>Phone:</strong> <span>+1 800 123 4567</span>
+              </p>
+              <p><strong>Email:</strong> <span>support@healthtech.com</span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#">AI Healthcare</a></li>
+              <li><a href="#">Telemedicine</a></li>
+              <li><a href="#">Health Analytics</a></li>
+              <li><a href="#">Personalized Treatment Plans</a></li>
+              <li><a href="#">Health Monitoring</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#">Health Blog</a></li>
+              <li><a href="#">Patient Testimonials</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Partnership Opportunities</a></li>
+              <li><a href="#">Contact Support</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Follow Us</h4>
+            <ul>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Updates</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">HealthTech</strong>
+          <span>All Rights Reserved</span>
+        </p>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
