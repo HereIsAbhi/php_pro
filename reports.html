@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Reports - Healthcare Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Include the same sidebar -->
+        <nav id="sidebar" class="active">
+            <!-- Sidebar content -->
+        </nav>
+
+        <div id="content">
+            <div class="container py-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h2>Medical Reports</h2>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#uploadReportModal">
+                        <i class="bi bi-upload"></i> Upload Report
+                    </button>
+                </div>
+
+                <div class="row">
+                    <!-- Reports Grid -->
+                    <div class="col-md-8">
+                        <div class="row">
+                            <!-- Report Cards -->
+                        </div>
+                    </div>
+
+                    <!-- Prescriptions Section -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">Current Prescriptions</h5>
+                            </div>
+                            <div class="card-body">
+                                <!-- Prescription list -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Upload Report Modal -->
+    <div class="modal fade" id="uploadReportModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Upload Medical Report</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="upload-area">
+                        <i class="bi bi-cloud-upload display-4"></i>
+                        <p>Drag and drop files here or click to browse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="reports.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+/* Settings Styles */
+.settings-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.settings-nav {
+    position: sticky;
+    top: 20px;
+}
+
+.settings-nav .list-group-item {
+    border: none;
+    padding: 12px 20px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    color: #6c757d;
+    transition: all 0.3s ease;
+}
+
+.settings-nav .list-group-item:hover {
+    background-color: #f8f9fa;
+    color: #3498db;
+}
+
+.settings-nav .list-group-item.active {
+    background-color: #3498db;
+    color: white;
+}
+
+.settings-nav .list-group-item i {
+    width: 20px;
+}
+
+.settings-section {
+    padding: 0 20px;
+}
+
+.settings-section h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.setting-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.setting-item:last-child {
+    border-bottom: none;
+}
+
+.setting-item h5 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.setting-item p {
+    font-size: 0.9rem;
+}
+
+/* Form Styles */
+.form-select {
+    min-width: 150px;
+}
+
+.form-check-input:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+/* Theme Options */
+.theme-options {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .settings-nav {
+        margin-bottom: 20px;
+        position: static;
+    }
+
+    .settings-section {
+        padding: 0;
+    }
+}
