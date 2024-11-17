@@ -1,14 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Toggle Sidebar with smooth animation
-    document.getElementById('sidebarCollapse').addEventListener('click', function() {
+    document.getElementById('sidebarCollapse').addEventListener('click', function () {
         document.getElementById('sidebar').classList.toggle('active');
     });
 
     // Handle appointment form submission
     const appointmentForm = document.getElementById('appointmentForm');
     if (appointmentForm) {
-        appointmentForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+        appointmentForm.addEventListener('submit', function (e) {
+            // e.preventDefault();
             showAlert('Appointment scheduled successfully!', 'success');
         });
     }

@@ -39,19 +39,19 @@ $user_phone = $_SESSION['user_phone'];
           <a href="dashboard.php#features"><i class="bi bi-grid-fill me-2"></i>Features</a>
         </li>
         <li>
-          <a href="profile.html"><i class="bi bi-person-fill me-2"></i>Profile</a>
+          <a href="profile.php"><i class="bi bi-person-fill me-2"></i>Profile</a>
         </li>
         <li>
-          <a href="settings.html"><i class="bi bi-gear-fill me-2"></i>Settings</a>
+          <a href="settings.php"><i class="bi bi-gear-fill me-2"></i>Settings</a>
         </li>
         <li>
-          <a href="appointments.html"><i class="bi bi-calendar-check me-2"></i>Appointments</a>
+          <a href="appointments.php"><i class="bi bi-calendar-check me-2"></i>Appointments</a>
         </li>
         <li>
-          <a href="reports.html"><i class="bi bi-file-medical me-2"></i>Reports</a>
+          <a href="reports.php"><i class="bi bi-file-medical me-2"></i>Reports</a>
         </li>
         <li>
-          <a href="goals.html"><i class="bi bi-trophy me-2"></i>Health Goals</a>
+          <a href="goals.php"><i class="bi bi-trophy me-2"></i>Health Goals</a>
         </li>
       </ul>
     </nav>
@@ -72,10 +72,10 @@ $user_phone = $_SESSION['user_phone'];
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
-                  <a class="dropdown-item" href="profile.html">Profile</a>
+                  <a class="dropdown-item" href="profile.php">Profile</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="settings.html">Settings</a>
+                  <a class="dropdown-item" href="settings.php">Settings</a>
                 </li>
                 <li>
                   <hr class="dropdown-divider" />

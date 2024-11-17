@@ -34,27 +34,27 @@
             >
           </li>
           <li>
-            <a href="profile.html"
+            <a href="profile.php"
               ><i class="bi bi-person-fill me-2"></i>Profile</a
             >
           </li>
           <li>
-            <a href="settings.html"
+            <a href="settings.php"
               ><i class="bi bi-gear-fill me-2"></i>Settings</a
             >
           </li>
           <li>
-            <a href="appointments.html"
+            <a href="appointments.php"
               ><i class="bi bi-calendar-check me-2"></i>Appointments</a
             >
           </li>
           <li>
-            <a href="reports.html"
+            <a href="reports.php"
               ><i class="bi bi-file-medical me-2"></i>Reports</a
             >
           </li>
           <li>
-            <a href="goals.html"
+            <a href="goals.php"
               ><i class="bi bi-trophy me-2"></i>Health Goals</a
             >
           </li>
@@ -83,10 +83,10 @@
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a class="dropdown-item" href="profile.html">Profile</a>
+                    <a class="dropdown-item" href="profile.php">Profile</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="settings.html">Settings</a>
+                    <a class="dropdown-item" href="settings.php">Settings</a>
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item" href="logout.php">Logout</a></li>
