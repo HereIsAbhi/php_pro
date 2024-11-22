@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "Abhi@2012";
 $dbname = "healthTech_db";
 
 // Create connection
